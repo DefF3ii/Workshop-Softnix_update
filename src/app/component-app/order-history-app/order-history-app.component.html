@@ -1,0 +1,34 @@
+<div class="container">
+  <div mat-dialog-actions class="close-btn">
+    <button class="btn btn-outline-danger search-input" (click)="closeDialog()"></button>
+  </div>
+
+  <div>
+    <p mat-dialog-title>Customer ID: {{ data.customerID }}</p>
+  </div>
+
+  <div mat-dialog-content>
+    <table class="table table-bordered div-table">
+      <thead class="table-danger">
+        <tr>
+          <th scope="col">Product ID</th>
+          <th scope="col">OrderDate</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let order of orders;">
+          <td>{{ order.ProductID }}</td>
+          <td>{{ order.OrderDate | date: 'dd/MM/yyyy' }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #noCustomer>
+      <p>No Customers available.</p>
+    </ng-template>
+  </div>
+
+  
+
+</div>

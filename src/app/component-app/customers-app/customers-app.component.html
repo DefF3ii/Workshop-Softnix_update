@@ -1,0 +1,23 @@
+<div class="container">
+    <table *ngIf="customers.length > 0; else noCustomer" class="table table-bordered div-table">
+    <thead class="table-primary" >
+      <tr>
+        <th scope="col">Customer ID</th>
+        <th scope="col">Customer Name</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let customer of customers;">
+            <td>{{ customer.CustomerID }}</td>
+            <td>{{ customer.ContactName }}</td>
+            <td><button mat-raised-button color="primary" (click)="openDialog(customer.CustomerID)">Order History</button></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <ng-template #noCustomer>
+    <p style="text-align: center; font-size: 20px; font-weight: 500">No Customers available.</p>
+  </ng-template>
+</div>

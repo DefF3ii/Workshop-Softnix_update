@@ -1,0 +1,17 @@
+.container-first {
+    justify-content: flex-start !important;
+    gap: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16;
+    font-weight: 500;
+}
+
+.container-sec {
+    margin: 20px;
+    /* padding: 10px; */
+}

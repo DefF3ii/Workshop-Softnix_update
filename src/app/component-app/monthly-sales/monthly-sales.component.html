@@ -1,0 +1,24 @@
+<div class="container">
+    <div>
+      <p>Monthly sales Data</p>
+    </div>
+  
+    <div class="div-table">
+      <table class="table table-bordered">
+        <thead class="table-success">
+          <tr>
+            <th scope="col">YYYY/MM</th>
+            <th scope="col">Total Sales</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let month of getMonths(monthlySales)">
+              <td>{{ month }}</td>
+              <td>{{ monthlySales[month] | number:'1.2-2' }} usd</td>
+          </tr>
+        </tbody>
+      </table>
+  
+    </div>
+  </div>

@@ -1,0 +1,25 @@
+.container {
+    padding: 15px;
+}
+
+.div-table {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.close-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.search-input {
+    background-image: url('../../../assets/images//cancel-black.png') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+    padding: 15px;
+}

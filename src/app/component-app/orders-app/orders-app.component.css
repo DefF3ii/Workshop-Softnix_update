@@ -1,0 +1,30 @@
+.container {
+    padding: 10px;
+}
+
+.search-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.search-div p {
+    font-size: 16px;
+    font-weight: 500px;
+    text-align:center
+}
+
+.search-input {
+    background-image: url('../../../assets/images//search-icon.png') ;
+    background-repeat: no-repeat;
+    background-position: left 8px center;
+    background-size: 16px 16px; 
+    padding-left: 30px;
+}
+
+
+.div-table {
+    text-align: center;
+}

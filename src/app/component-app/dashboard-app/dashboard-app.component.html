@@ -1,0 +1,24 @@
+<div class="container">
+  <div >
+    <p>Daily sales Data</p>
+  </div>
+
+  <div class="div-table">
+    <table class="table table-bordered">
+      <thead class="table-info">
+        <tr>
+          <th scope="col">DD/MM/YYYY</th>
+          <th scope="col">Total Sales</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let date of getDates(dailySales)">
+        <td>{{ date }}</td>
+            <td>{{ dailySales[date] | number:'1.2-2' }} usd</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

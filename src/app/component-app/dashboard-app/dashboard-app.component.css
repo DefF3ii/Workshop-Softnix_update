@@ -1,0 +1,13 @@
+.container {
+    padding: 0 20px 10px 20px;
+} 
+ 
+div p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.div-table {
+    text-align: center;
+}
